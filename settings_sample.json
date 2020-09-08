@@ -1,0 +1,6 @@
+{
+  "apic_ip": "https://<APIC-IP>",
+  "username": "<username>",
+  "password": "<password>"
+}
+
