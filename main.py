@@ -31,7 +31,7 @@ def main():
     # For a list of tenants, use
     # object_list = op.list_dn_in_class(session, apic_ip, CLASS_PATH, "fvTenant")
     object_list = op.list_dn_in_class(session, apic_ip, CLASS_PATH, OBJECT_MAPPING.get("leaf_profile").get("class"))
-    print(object_list)
+    print(json.dumps(object_list,indent=4))
 
 if __name__ == "__main__":
     main()
