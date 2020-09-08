@@ -30,7 +30,9 @@ def main():
     # Example to get a list of leaf profiles
     # For a list of tenants, use
     # object_list = op.list_dn_in_class(session, apic_ip, CLASS_PATH, "fvTenant")
-    object_list = op.list_dn_in_class(session, apic_ip, CLASS_PATH, OBJECT_MAPPING.get("leaf_profile").get("class"))
+    object_name = "leaf_profile"
+    object_list = op.list_dn_in_class(session, apic_ip, CLASS_PATH, OBJECT_MAPPING.get(object_name).get("class"))
+    print("A list of {}".format(object_name))
     print(json.dumps(object_list,indent=4))
 
 if __name__ == "__main__":
