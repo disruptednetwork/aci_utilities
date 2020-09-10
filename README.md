@@ -30,9 +30,8 @@ My day-to-day work involves Cisco ACI a lot so I created a collection of python 
 ## Features
 List of features ready and TODOs for future development
 * List objects' DN under an object class
-
+* Delete an object in an object class
 To-do list:
-* Delete all objects in an object class
 
 ## Status
 Project is: _in progress_
